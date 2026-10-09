@@ -1,0 +1,15 @@
+{
+  "app": {
+    "title": "openGym",
+    "headerTitle": "openGym",
+    "headerColor": "#0c0e12",
+    "textColor": "white",
+    "statusBar": "normal",
+    "leftButton": "back",
+    "actionBarHidden": false
+  },
+  "debug": false,
+  "listCSS": [],
+  "listSyncJS": ["assets/zalo.module.js"],
+  "listAsyncJS": []
+}

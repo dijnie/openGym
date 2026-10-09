@@ -1,0 +1,40 @@
+{
+  "name": "opengym-zalo-miniapp",
+  "private": true,
+  "version": "1.3.10",
+  "type": "module",
+  "scripts": {
+    "build": "vite build --mode zalo",
+    "login": "npx --yes zmp-cli@4.0.3 login --app-id 3070714070908834081",
+    "deploy": "npm run build && npx --yes zmp-cli@4.0.3 deploy --mode zalo --existing --testing --passive --outputDir dist --desc \"openGym Testing\"",
+    "test": "vitest run",
+    "build:zalo": "npm run build",
+    "login:zalo": "npm run login",
+    "deploy:zalo": "npm run deploy"
+  },
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@aparajita/capacitor-secure-storage": "^7.1.6",
+    "@capacitor-mlkit/barcode-scanning": "^7.5.0",
+    "@capacitor/app": "^7.1.2",
+    "@capacitor/core": "^7.6.8",
+    "@capacitor/filesystem": "^7.1.8",
+    "@capacitor/local-notifications": "^7.0.7",
+    "@capacitor/share": "^7.0.4",
+    "jsqr": "^1.4.0",
+    "lean-qr": "^2.7.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.2",
+    "zmp-sdk": "^2.53.0",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.3",
+    "@vitest/coverage-v8": "^4.1.11",
+    "happy-dom": "^20.11.2",
+    "linkedom": "^0.18.13",
+    "vite": "^8.1.5",
+    "vitest": "^4.1.10"
+  }
+}
